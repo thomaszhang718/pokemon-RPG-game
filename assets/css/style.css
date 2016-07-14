@@ -1,0 +1,63 @@
+/*Pokemon RPG Game CSS Sheet*/
+
+body {
+	background-image: url("../images/pokemon-background.jpg");
+	background-repeat: repeat;
+	overflow: auto;
+}
+
+
+h1 {
+	font-family: "Nunito", "Arial", Helvetica, sans-serif;
+	font-size: 70px;
+	text-align: center;
+}
+
+.music {
+	width: 100%;
+	margin: 0 auto;
+    display: block;
+}
+
+.container {
+	width: 100%;
+}
+
+.pokemonPic {
+    width: 200px;
+    height: 200px;
+	margin: 0 auto;
+    display: block;
+}	
+
+#bulbasaurMoveDiv, #charmanderMoveDiv, #squirtleMoveDiv, #pikachuMoveDiv {
+	width: 240px;
+	height: 240px;
+	background-color: white;
+    border: 5px solid black;
+    float: left;
+    margin: 10px;
+}
+
+#h2-id {
+	width:100%;
+	float: left;
+	clear: both;
+	font-family: "Nunito", "Arial", Helvetica, sans-serif;
+}
+
+.attackButton, .HPtext, .characterHPtext, .opponentHPtext, #yourDamageText, #opponentDamageText, #resultsText, #restartButtonDiv, #characterHPtext {
+	float: left;
+	clear: both;
+}
+
+p, p.characterHPtext, p.opponentHPtext {
+	font-size: 20px;
+	text-align: center;
+	width: 220px;
+}
+
+#yourDamageText, #opponentDamageText, #resultsText {
+	width: auto;
+}
+

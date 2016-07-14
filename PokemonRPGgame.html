@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon RPG Game</title>
+
+    <!-- Importing css reset, bootstrap, and styles -->
+
+    <style type ="text/css">
+        @import url("assets/css/reset.css");
+        @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css");
+        @import url("assets/css/style.css");
+    </style>
+
+    <!-- Adding JQuery and fonts -->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+</head>
+<body>
+
+    <!-- Container div for the game -->
+
+    <div class="container">
+
+        <!-- Header Section -->
+
+        <div class="header">
+            <header>
+                <h1>Pokemon RPG Game</h1>
+            </header>
+        </div>
+        
+        <!-- Music Buttons for Play/Pause/Restart -->
+
+        <div class="music">
+            <button class="btn musicPlayButton"><span class="glyphicon glyphicon-play"></span> Play Song</button>       
+            <button class="btn musicPauseButton"><span class="glyphicon glyphicon-pause"></span> Pause Song</button>  
+            <button class="btn musicRestartButton"><span class="glyphicon glyphicon-refresh"></span> Restart Song</button>  
+          </div>
+
+        <!-- Creating Divs for the possible characters to pick from -->
+
+        <div class="possibleCharacters">
+            <div class="bulbasaurDiv"></div>
+            <div class="charmanderDiv"></div>
+            <div class="squirtleDiv"></div>
+            <div class="pikachuDiv"></div>
+        </div>
+
+        <!-- Creating area where your selected Pokemon will appear -->
+
+        <h2 id="h2-id">Your Pokemon</h2>
+
+        <div id="yourCharacter">
+            <p class="characterHPtext"></p>
+        </div>
+        
+        <!-- Creating area where your available Pokemon to fight will appear -->
+
+        <h2 id="h2-id">Pokemon Available To Battle</h2>
+        <div id="enemiesDiv">
+            <div class="opponentBulbasaurDiv"></div>
+            <div class="opponentCharmanderDiv"></div>
+            <div class="opponentSquirtleDiv"></div>
+            <div class="opponentPikachuDiv"></div>
+        </div>
+
+        <!-- Creating area for the Attack button -->
+
+        <h2 id="h2-id">Fight Section</h2>
+        <div id="fightSectionDiv">
+            <button class="attackButton">Attack</button>
+        </div>
+
+        <!-- Creating area where the pokemon you are currently fighting will appear -->
+
+        <h2 id="h2-id">Defender</h2>
+        <div id="defenderDiv">
+            <p class="opponentHPtext"></p>
+        </div>
+        
+        <!-- Creating area where texts will show up. Will display your damage, opponents damage, if you win/lose, and the restart button -->
+
+        <div id="fightTextDiv">
+            <p id="yourDamageText"></p>
+            <p id="opponentDamageText"></p>
+            <p id="resultsText"></p>
+            <div id="restartButtonDiv"></div>
+        </div>
+
+        <div id="pokemonGameJS">
+            <script type="text/javascript" src="assets/javascript/game.js"></script>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
